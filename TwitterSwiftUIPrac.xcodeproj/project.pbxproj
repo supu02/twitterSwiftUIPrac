@@ -11,6 +11,7 @@
 		CD34331C2A285AC700CF0CA9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD34331B2A285AC700CF0CA9 /* ContentView.swift */; };
 		CD34331E2A285ACA00CF0CA9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD34331D2A285ACA00CF0CA9 /* Assets.xcassets */; };
 		CD3433222A285ACA00CF0CA9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD3433212A285ACA00CF0CA9 /* Preview Assets.xcassets */; };
+		CD3433312A285B9C00CF0CA9 /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3433302A285B9C00CF0CA9 /* FeedView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		CD34331D2A285ACA00CF0CA9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CD34331F2A285ACA00CF0CA9 /* TwitterSwiftUIPrac.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TwitterSwiftUIPrac.entitlements; sourceTree = "<group>"; };
 		CD3433212A285ACA00CF0CA9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CD3433302A285B9C00CF0CA9 /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +54,10 @@
 		CD3433182A285AC700CF0CA9 /* TwitterSwiftUIPrac */ = {
 			isa = PBXGroup;
 			children = (
+				CD34332B2A285B0D00CF0CA9 /* Extensions */,
+				CD34332A2A285B0900CF0CA9 /* Model */,
+				CD3433292A285B0700CF0CA9 /* Service */,
+				CD3433282A285AF800CF0CA9 /* Core */,
 				CD3433192A285AC700CF0CA9 /* TwitterSwiftUIPracApp.swift */,
 				CD34331B2A285AC700CF0CA9 /* ContentView.swift */,
 				CD34331D2A285ACA00CF0CA9 /* Assets.xcassets */,
@@ -67,6 +73,67 @@
 				CD3433212A285ACA00CF0CA9 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CD3433282A285AF800CF0CA9 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				CD34332C2A285B2900CF0CA9 /* Components */,
+				CD34332D2A285B2F00CF0CA9 /* Feed */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		CD3433292A285B0700CF0CA9 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		CD34332A2A285B0900CF0CA9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CD34332B2A285B0D00CF0CA9 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		CD34332C2A285B2900CF0CA9 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		CD34332D2A285B2F00CF0CA9 /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+				CD34332E2A285B6C00CF0CA9 /* ViewModels */,
+				CD34332F2A285B7400CF0CA9 /* View */,
+			);
+			path = Feed;
+			sourceTree = "<group>";
+		};
+		CD34332E2A285B6C00CF0CA9 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		CD34332F2A285B7400CF0CA9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CD3433302A285B9C00CF0CA9 /* FeedView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,6 +207,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CD34331C2A285AC700CF0CA9 /* ContentView.swift in Sources */,
+				CD3433312A285B9C00CF0CA9 /* FeedView.swift in Sources */,
 				CD34331A2A285AC700CF0CA9 /* TwitterSwiftUIPracApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
